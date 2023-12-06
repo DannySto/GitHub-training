@@ -11,8 +11,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-stuff:
+  my-job:
     runs-on: ubuntu-latest
     steps:
-     - run: echo "Hello world!"
-  
+      - name: my-step
+        run: echo "Hello World!"
